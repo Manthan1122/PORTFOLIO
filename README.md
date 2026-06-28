@@ -1,99 +1,70 @@
-# Manthan Shende Portfolio
+# Manthan Shende — Portfolio Website
 
-Personal portfolio website for **Manthan Sunil Shende**, an Industrial IoT Engineer and Software Developer.
+> A highly polished personal portfolio for **Manthan Sunil Shende**, Industrial IoT Engineer & Software Developer.
 
-## Overview
+---
 
-This is a clean, single-page portfolio built to present Manthan's background, skills, internship experience, projects, certifications, and contact details in a modern static site.
+## 🚀 Tech Stack
+- **Pure HTML5, CSS3, Vanilla JavaScript** — zero dependencies, zero build step
+- **Vercel-ready** static deployment
 
-## Highlights
-
-- Hero section with name, title, CTA buttons, social links, and quick stats
-- About section with education, location, and core focus areas
-- Skills section covering embedded systems, programming, web technologies, and developer tools
-- Experience section featuring an Embedded System Intern role at Internpe
-- Projects section with Smart Radar System, Voice-Controlled Bot, and Posture Guard AI Web
-- Certifications section for hackathons and workshop participation
-- Contact section with email, phone, LinkedIn, and GitHub links
-- Fully responsive layout with animated reveals and smooth scrolling
-
-## Tech Stack
-
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- Vercel for static deployment
-
-## Portfolio Details
-
-- Name: Manthan Sunil Shende
-- Role: Industrial IoT Engineer & Software Developer
-- Location: Nagpur, Maharashtra, India
-- College: St. Vincent Pallotti College of Engineering & Technology
-- Program: B.Tech in Industrial Internet of Things
-- CGPA: 9.06 / 10
-- Expected Graduation: 2028
-
-## Featured Experience
-
-- Embedded System Intern, Internpe
-- Duration: Jun 2026 – Jul 2026
-- Focus: microcontrollers, embedded C, sensor interfacing, and hardware-software integration
-
-## Featured Projects
-
-- Smart Radar System
-- Voice-Controlled Bot
-- Posture Guard AI Web
-
-## Contact
-
-- Email: manthanshende13@gmail.com
-- Phone: +91 74984 92601
-- LinkedIn: linkedin.com/in/manthan-shende
-- GitHub: github.com/Manthan1122
-
-## Project Structure
+## 📁 Project Structure
 
 ```
 manthan-portfolio/
-├── assets/
-├── index.html
-├── README.md
-└── vercel.json
+├── index.html      # Complete portfolio (all-in-one)
+├── vercel.json     # Vercel deployment config
+└── README.md       # This file
 ```
 
-## Local Preview
+## ✨ Features
+- ⚡ Dark industrial-tech color palette (deep grays + neon cyan/blue accents)
+- 🎯 Smooth scroll with active section highlighting
+- 🔤 Typing animation in the Hero section
+- 🎞️ Scroll-reveal animations via IntersectionObserver
+- 📱 Fully responsive (mobile hamburger menu included)
+- ♿ Semantic HTML & ARIA attributes for accessibility
+- 🔒 Security headers via `vercel.json`
 
-Open `index.html` in a browser, or serve the folder with any static server.
+## 📋 Sections
+1. **Hero** — Name, title, tagline, CTA buttons, social links, stats
+2. **About** — Education, focus areas, profile card
+3. **Skills** — IoT/Embedded, Languages, Web, Dev Tools
+4. **Experience** — Embedded System Intern @ Internpe (Jun–Jul 2026)
+5. **Projects** — Smart Radar, Voice-Controlled Robot Car, Posture Guard AI
+6. **Certifications** — CIH 2.0, HVAC&R Hackathon, API Development Workshop
+7. **Contact** — Form + email + phone
 
-## Deploy on Vercel
+## 🌐 Deploy on Vercel
 
-### Vercel CLI
-
+### Option 1 — Vercel CLI
 ```bash
 npm install -g vercel
 vercel
 ```
 
-### Vercel Dashboard
+### Option 2 — Vercel Dashboard (Recommended)
+1. Push this folder to a **GitHub repository**
+2. Go to [vercel.com](https://vercel.com) → **New Project**
+3. Import your GitHub repo
+4. Framework: **Other** (Static HTML)
+5. Click **Deploy** ✅
 
-1. Push the project to GitHub.
-2. Open [vercel.com](https://vercel.com) and create a new project.
-3. Import the repository.
-4. Set the framework to **Other** for a static site.
-5. Deploy.
+## 🛠️ Customization Tips
 
-## Customization Notes
+| What to change | Where in `index.html` |
+|---|---|
+| LinkedIn URL | `href` on `#social-linkedin` and `#contact-linkedin-link` |
+| GitHub URL | `href` on `#social-github` and `#contact-github-link` |
+| Project GitHub links | `.project-card-footer` anchor tags |
+| Contact form backend | Replace the `setTimeout` in the `submit` handler with **FormSubmit** or **EmailJS** |
 
-- Update social links in `index.html` for LinkedIn, GitHub, and Instagram.
-- Replace project links in the project cards if you add live demos or repositories.
-- The resume button expects a `resume.pdf` file at the project root.
-- If you want a working contact form, connect the existing form to a service such as FormSubmit or EmailJS.
+### Connect the Contact Form (optional)
+Replace the form action with [FormSubmit](https://formsubmit.co/):
+```html
+<form action="https://formsubmit.co/manthanshende13@gmail.com" method="POST">
+```
 
-## Notes
-
-- The site is intentionally dependency-free.
-- Security headers are configured through `vercel.json`.
+---
 
 © 2026 Manthan Sunil Shende
